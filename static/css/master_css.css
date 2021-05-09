@@ -6,7 +6,7 @@ header,
 }
 
 #intro {
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://besthqwallpapers.com/Uploads/16-5-2020/132669/stack-of-books-blue-background-education-concepts-books-library.jpg")no-repeat center center fixed;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://cdn.pixabay.com/photo/2016/01/27/04/32/books-1163695_960_720.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,30 +20,30 @@ header,
   }
 
 .bg-light.scrolled{
-  background-color: #b2ebf2 !important;
+  background-color: #0c4f58 !important;
 }
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ff5722;
+    color: #0c4f58;
 }
 
 .navbar-light .nav-link {
-    color: #ff5722;
+    color: #0c4f58;
 }
 
 
 .navbar-expand-lg {
-    background-color: #b2ebf2;
+    background-color: #0c4f58;
   }
   @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: #b2ebf2;
+      background-color: #FF0088;
     }
   }
   @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: #b2ebf2;
+      background-color: #FF0088;
     }
   }
 
@@ -56,7 +56,7 @@ hr{
 }
 
 .btn-outline-white{
-  border-color: cyan;
+  border-color: #FF0088;
 }
 
 .event-mask{
@@ -117,7 +117,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: #ff5722;
+  color: #00c3ff86;
   content: "/\00a0";
 }
 
@@ -129,7 +129,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: #b2ebf2;
+  color: #FF0088;
   text-decoration: underline;
 }
 
@@ -162,7 +162,7 @@ ul.breadcrumb li a:hover {
 /* get lesson button */
 .button-les {
   border-radius: 4px;
-  background-color: #00bcd4;
+  background-color: #FF0088;
   border: none;
   color: #FFFFFF;
   text-align: center;

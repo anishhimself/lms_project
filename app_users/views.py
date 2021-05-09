@@ -5,6 +5,7 @@ from django.shortcuts import render
 from app_users.forms import UserForm, UserProfileInfoForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+from django.contrib import messages, auth
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic import TemplateView
@@ -19,14 +20,13 @@ def user_login(request):
 
         user = authenticate(username=username, password=password)
 
-        if user:
-            if user.is_active:
-                login(request,user)
-                return HttpResponseRedirect(reverse('index'))
-            else:
-                return HttpResponse("ACCOUNT IS DEACTIVATED")
+        if user.is_active:
+            login(request,user)
+            messages.success(request, 'You are now logged in')
+            return HttpResponseRedirect(reverse('index'))
         else:
-            return HttpResponse("Please use correct id and password")
+            messages.error(request,"Please use correct id and password")
+            return redirect('login')
             # return HttpResponseRedirect(reverse('register'))
 
     else:

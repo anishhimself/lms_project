@@ -1,9 +1,15 @@
 html,
-body,
 header,
 #intro {
     height: 100%;
+
 }
+
+body{
+  height: 100%;
+  background-color:#7700FF;
+}
+
 
 #intro {
     background:linear-gradient(rgb(117, 175, 165), rgba(0, 0, 0, 0.7)), url("https://cdn.pixabay.com/photo/2016/01/27/04/32/books-1163695_960_720.jpg")no-repeat center center fixed;
@@ -38,12 +44,12 @@ header,
   }
   @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: #FF0088;
+      background-color: #FF7700;
     }
   }
   @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: #FF0088;
+      background-color: #FF7700;
     }
   }
 
@@ -56,7 +62,7 @@ hr{
 }
 
 .btn-outline-white{
-  border-color: #FF0088;
+  border-color: #FF7700;
 }
 
 .event-mask{
@@ -129,7 +135,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: #FF0088;
+  color: #FF7700;
   text-decoration: underline;
 }
 
@@ -162,7 +168,7 @@ ul.breadcrumb li a:hover {
 /* get lesson button */
 .button-les {
   border-radius: 4px;
-  background-color: #FF0088;
+  background-color: #FF7700;
   border: none;
   color: #FFFFFF;
   text-align: center;

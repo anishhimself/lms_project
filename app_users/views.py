@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 # Create your views here.
 from django.shortcuts import render
@@ -20,7 +20,7 @@ def user_login(request):
 
         user = authenticate(username=username, password=password)
 
-        if user.is_active:
+        if user is not None:
             login(request,user)
             messages.success(request, 'You are now logged in')
             return HttpResponseRedirect(reverse('index'))
@@ -35,8 +35,10 @@ def user_login(request):
 
 @login_required
 def user_logout(request):
-    logout(request)
-    return HttpResponseRedirect(reverse('index'))
+    if request.method=='POST':
+        auth.logout(request)
+        messages.success(request,'You are now logged out')
+        return HttpResponseRedirect(reverse('index'))
 
 
 # Create your views here.

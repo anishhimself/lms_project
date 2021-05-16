@@ -1,7 +1,4 @@
 from django.shortcuts import render,redirect
-
-# Create your views here.
-from django.shortcuts import render
 from app_users.forms import UserForm, UserProfileInfoForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
